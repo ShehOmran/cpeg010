@@ -1,0 +1,43 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App-logo-left {
+  pointer-events: none;
+  left: -20px;
+  padding: 1vh;
+  height: 15vh;
+  position: absolute;
+  /* background-color: #282c34; */
+  /*this is intentional because it looks funny*/
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo-left,.App-logo-right {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-header {
+  background-color: #020202;
+  height: 15vh;
+  min-width: 200px;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(20px + 2vmin);
+  color: skyblue;
+}
